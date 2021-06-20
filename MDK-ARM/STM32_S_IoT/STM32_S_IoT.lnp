@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"stm32_s_iot\startup_stm32f103xb.o"
+"stm32_s_iot\ds18b20_temp.o"
+"stm32_s_iot\ds1302.o"
+"stm32_s_iot\main.o"
+"stm32_s_iot\stm32f1xx_it.o"
+"stm32_s_iot\stm32f1xx_hal_msp.o"
+"stm32_s_iot\stm32f1xx_hal_gpio_ex.o"
+"stm32_s_iot\stm32f1xx_hal_tim.o"
+"stm32_s_iot\stm32f1xx_hal_tim_ex.o"
+"stm32_s_iot\stm32f1xx_hal.o"
+"stm32_s_iot\stm32f1xx_hal_rcc.o"
+"stm32_s_iot\stm32f1xx_hal_rcc_ex.o"
+"stm32_s_iot\stm32f1xx_hal_gpio.o"
+"stm32_s_iot\stm32f1xx_hal_dma.o"
+"stm32_s_iot\stm32f1xx_hal_cortex.o"
+"stm32_s_iot\stm32f1xx_hal_pwr.o"
+"stm32_s_iot\stm32f1xx_hal_flash.o"
+"stm32_s_iot\stm32f1xx_hal_flash_ex.o"
+"stm32_s_iot\stm32f1xx_hal_exti.o"
+"stm32_s_iot\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "STM32_S_IoT\STM32_S_IoT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM32_S_IoT.map" -o STM32_S_IoT\STM32_S_IoT.axf
